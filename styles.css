@@ -4,7 +4,7 @@ header {
     justify-content: space-between;
     align-items: center;
     font-family: 'Noto Sans', sans-serif;
-    width: 100%;
+    width: auto;
     height: fit-content;
     padding: 5px;
     background-color: #742F44;
@@ -16,6 +16,7 @@ header strong {
 }
 
 body {
+    height: 100%;
     margin: 0;
     background-size: cover;
     background-position: center;
