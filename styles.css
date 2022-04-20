@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Noto+Sans:wght@500&display=swap');
+
+html {
+    height: 100%;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -31,8 +36,15 @@ body {
     height: 100%;
     background-color: white;
     padding: 30px;
+    font-family: 'Noto Sans', sans-serif;
 }
-
+img {
+    object-fit: cover;
+}
+h1 {
+    text-align: center;
+    margin: 20px 0px;
+}
 header ul li {
     display: inline;
     padding-left: 3px;
