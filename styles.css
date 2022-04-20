@@ -11,6 +11,10 @@ header {
     margin-bottom: 0;
 }
 
+header strong {
+    margin-left: 15px;
+}
+
 body {
     margin: 0;
     background-size: cover;
@@ -42,4 +46,3 @@ header a {
 header a:hover {
     color: black;
 }
-abababa
