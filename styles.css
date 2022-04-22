@@ -30,7 +30,7 @@ body {
 }
 
 #central {
-    display: block;
+    display: flex;
     margin: 0 auto 0 auto;
     width: 70%;
     height: 100%;
