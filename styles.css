@@ -19,7 +19,9 @@ header {
 header strong {
     margin-left: 15px;
 }
-
+ul p {
+    display: inline;
+}
 body {
     height: 100%;
     margin: 0;
@@ -40,6 +42,21 @@ body {
     background-color: white;
     padding: 30px;
     font-family: 'Noto Sans', sans-serif;
+}
+@media only screen and (max-width: 480px){
+    #central {
+        width: 100%;
+    }
+    .topframe {
+        width: 100%;
+        margin: 0 auto;
+    }
+    header ul {
+        display: block;
+    }
+    header ul li {
+        display: block;
+    }
 }
 img {
     width: 100%;
