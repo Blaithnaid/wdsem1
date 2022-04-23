@@ -1,23 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Noto+Sans:wght@500&display=swap');
 
-html {
-    height: 100%;
-}
+
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: 'Noto Sans', sans-serif;
-    width: auto;
     height: fit-content;
     padding: 5px;
     background-color: #742F44;
     margin-bottom: 0;
 }
 footer {
+    display: flex;
+    align-items: center;
     font-family: 'Noto Sans', sans-serif;
-    width: auto;
     height: fit-content;
     padding: 10px;
     background-color: #742F44;
@@ -40,17 +38,37 @@ body {
     width: 95%;
     margin: 0 auto;
 }
+.centertext {
+    padding: 10px 10%;
+}
 #central {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0 auto 0 auto;
-    width: 65%;
+    width: 60%;
     height: 100%;
     background-color: white;
     padding-top: 20px;
     font-family: 'Noto Sans', sans-serif;
 }
-.centertext {
-    margin: 10px 30px;
+.collage {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.collage div {
+    padding: 2%;
+    width: 360px;
+    height: fit-content;
+    margin: 1%;
+    border-style: solid;
+    border-color: black;
+    border-width: thin;
+}
+.collage h3 {
+    text-align: center;
 }
 @media only screen and (max-width: 480px){
     #central {
