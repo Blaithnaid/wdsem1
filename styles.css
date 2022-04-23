@@ -15,7 +15,13 @@ header {
     background-color: #742F44;
     margin-bottom: 0;
 }
-
+footer {
+    font-family: 'Noto Sans', sans-serif;
+    width: auto;
+    height: fit-content;
+    padding: 10px;
+    background-color: #742F44;
+}
 header strong {
     margin-left: 15px;
 }
@@ -37,11 +43,14 @@ body {
 #central {
     display: block;
     margin: 0 auto 0 auto;
-    width: 70%;
+    width: 65%;
     height: 100%;
     background-color: white;
-    padding: 30px;
+    padding-top: 20px;
     font-family: 'Noto Sans', sans-serif;
+}
+.centertext {
+    margin: 10px 30px;
 }
 @media only screen and (max-width: 480px){
     #central {
