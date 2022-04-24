@@ -11,6 +11,7 @@
             }
         </style>
     </head>
+
     <body>
         <header>
             <strong>ATU, The First Year Experience: Contact Us</strong>
@@ -23,11 +24,46 @@
                 <p>·</p><li><a href="contact.html"> Contact Us</a></li>
             </ul>
         </header>
-        <div id="central" height="100%" width="70%">
-            <h1></h1>
+
+        <div id="central" height="100%" width="100%">
+			<h1 id="title">Contact Us Here!</h1>
+			<div class="topframe"><img src="img/kayak.jpg"></div>
+			<form action="http://www.example.com/form.php" method="get">
+				<fieldset>
+					<label class="title" for="name"></label>
+					<input type="text" name="name" id="name" placeholder="Name*" required><br>
+					<label class="title" for="email"></label>
+					<input type="text" name="email" id="email" placeholder="School Email*" required><br>
+					<label class="title" for="Course Title"></label>
+					<input type="text" name="Course Title" id="Course Title" Placeholder="Course Title*" required><br>
+					<label class="title" for="phonenumber"></label>
+					<input type="text" name="phonenumber" id="phonenumber" Placeholder="Phone Number*" required><br> 
+					<br>
+					<label for="DOB">Date of Birth:</label>
+					<input type="date" id="DOB" name="DOB">
+					<br>
+					<p>
+						<label for="campus" class="campus">Campus:</label>
+						<select name="campus" id="campus">
+							<option value="Blank"> </option>
+							<option value="DubinRd">Galway, Dublin Road</option>
+							<option value="Wellpark">Galway, Wellpark Road</option>
+							<option value="Mayo">Mayo</option>
+							<option value="Connemara">Connemara</option>
+							<option value="Mountbellew">Mountbellew</option>
+						</select>
+					</p>		 
+					<p>Please enter your message here:</p>
+					<div>
+						<textarea rows="5" cols="50" name="description">Enter details here...</textarea>
+					</div>
+					<br>
+				</fieldset>
+ 	    	<div class="submit"><input type="submit" value="Send Message" /></div>
+			</form>
         </div>
-        <footer>
-            <strong>Created by Iarla Sparrow Burke & Louiza Moran</strong>
-        </footer>
+		<footer>
+			<strong>Created by Iarla Sparrow Burke & Louiza Moran</strong>
+		</footer>
     </body>
 </html>

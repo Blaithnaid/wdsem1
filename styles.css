@@ -132,3 +132,21 @@ td {
     border: 1px solid black;
     padding: 10px;
 }
+form {
+    margin: 2% 0;
+}
+fieldset {
+    padding: 10%;
+    border: 2px solid black;
+    float: center;
+    text-align: left;
+    font-size: 20px;
+}
+form {
+    width: 90%;
+    height: fit-content;
+    display: inline-block;
+}
+textarea {
+    width: 90%;
+}
