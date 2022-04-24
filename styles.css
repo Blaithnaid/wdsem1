@@ -53,6 +53,7 @@ body {
     font-family: 'Noto Sans', sans-serif;
 }
 .collage {
+    padding: 0;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -60,12 +61,23 @@ body {
 }
 .collage div {
     padding: 2%;
-    width: 25%;
+    width: 260px;
     height: fit-content;
     margin: 1%;
     border-style: solid;
     border-color: black;
     border-width: thin;
+}
+.transmap {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.transmap div {
+    padding: 2%;
+    width: 45%;
+    height: fit-content;
+    margin: 1%;
 }
 .collage h3 {
     text-align: center;
@@ -106,4 +118,17 @@ header a {
 
 header a:hover {
     color: black;
+}
+figcaption {
+    background-color: rgb(204, 204, 204);
+    margin: 0;
+    padding: 5px;
+}
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td {
+    border: 1px solid black;
+    padding: 10px;
 }
