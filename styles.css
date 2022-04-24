@@ -69,7 +69,7 @@ top frame is the top image on each page, centertext is used on main.html below t
 }
 .collage div {
     padding: 2%;
-    width: 260px;
+    width: 25%;
     height: fit-content;
     margin: 1%;
     border-style: solid;
@@ -109,6 +109,13 @@ so they work properly on a mobile sized viewport. */
     header ul li {
         display: block;
     }
+    .collage div {
+        width: 90%;
+    }
+    .col {
+        width: 90%;
+    }
+
 }
 
 /* miscellaneous stylings, mostly relevant in only one or two elements in the site */
@@ -120,10 +127,24 @@ h1 {
     text-align: center;
     margin: 20px 0px;
 }
+
 header ul li {
     display: inline;
     padding-left: 3px;
     padding-right: 3px;
+}
+
+.twocol {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.col {
+    width: 40%;
+    height: auto;
 }
 
 header a {
