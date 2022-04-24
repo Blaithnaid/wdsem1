@@ -112,10 +112,32 @@ so they work properly on a mobile sized viewport. */
     .collage div {
         width: 90%;
     }
-    .col {
+    .twocol div {
         width: 90%;
     }
 
+}
+
+/* this css is taken from the internet - apparently it takes
+quite a bit of fiddling to get YouTube embeds to be responsive */
+.video-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.video-container::after {
+    padding-top: 75%;
+    display: block;
+    content: '';
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 /* miscellaneous stylings, mostly relevant in only one or two elements in the site */
@@ -141,12 +163,13 @@ header ul li {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    
 }
 .col {
     width: 40%;
     height: auto;
+    margin: 3%;
 }
-
 header a {
     text-decoration: none;
     color: rgb(170, 170, 170);
