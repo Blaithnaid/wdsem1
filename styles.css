@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Noto+Sans:wght@500&display=swap');
 
 
-
+/* styling for the header and footer at the top and bottom of each page */
 header {
     display: flex;
     justify-content: space-between;
@@ -26,6 +26,9 @@ header strong {
 ul p {
     display: inline;
 }
+
+/* basic styling for each body. background image settings are here, 
+the image itself is set within the html doc so that each page can have a unique one. */
 body {
     height: 100%;
     margin: 0;
@@ -34,6 +37,9 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
+
+/* some basic classes and IDs. central is the div in the middle of each page,
+top frame is the top image on each page, centertext is used on main.html below the top image */
 .topframe {
     width: 95%;
     margin: 0 auto;
@@ -52,6 +58,8 @@ body {
     padding-top: 20px;
     font-family: 'Noto Sans', sans-serif;
 }
+
+/* collage, used at the bottom of main.html */
 .collage {
     padding: 0;
     display: flex;
@@ -68,6 +76,8 @@ body {
     border-color: black;
     border-width: thin;
 }
+
+/* styling for transport.html's top section */
 .transmap {
     display: flex;
     align-items: flex-start;
@@ -82,6 +92,9 @@ body {
 .collage h3 {
     text-align: center;
 }
+
+/* breakpoint for mobile devices. adjusts widths and displays of several elements
+so they work properly on a mobile sized viewport. */
 @media only screen and (max-width: 480px){
     #central {
         width: 100%;
@@ -97,6 +110,8 @@ body {
         display: block;
     }
 }
+
+/* miscellaneous stylings, mostly relevant in only one or two elements in the site */
 img {
     width: 100%;
     height: 100%;
