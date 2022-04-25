@@ -3,7 +3,6 @@
 html {
     height: 100%;
 }
-
 header {
     display: flex;
     justify-content: space-between;
@@ -15,11 +14,9 @@ header {
     background-color: #742F44;
     margin-bottom: 0;
 }
-
 header strong {
     margin-left: 15px;
 }
-
 body {
     height: 100%;
     margin: 0;
@@ -28,9 +25,8 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
-
 #central {
-    display: flex;
+    display: block;
     margin: 0 auto 0 auto;
     width: 70%;
     height: 100%;
@@ -50,12 +46,10 @@ header ul li {
     padding-left: 3px;
     padding-right: 3px;
 }
-
 header a {
     text-decoration: none;
     color: rgb(170, 170, 170);
 }
-
 header a:hover {
     color: black;
 }
