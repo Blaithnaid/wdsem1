@@ -1,22 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Noto+Sans:wght@500&display=swap');
 
-html {
-    height: 100%;
-}
+
+/* styling for the header and footer at the top and bottom of each page */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: 'Noto Sans', sans-serif;
-    width: auto;
     height: fit-content;
     padding: 5px;
     background-color: #742F44;
     margin-bottom: 0;
 }
+footer {
+    display: flex;
+    align-items: center;
+    font-family: 'Noto Sans', sans-serif;
+    height: fit-content;
+    padding: 10px;
+    background-color: #2E4761;
+}
 header strong {
     margin-left: 15px;
 }
+ul p {
+    display: inline;
+}
+
+/* basic styling for each body. background image settings are here, 
+the image itself is set within the html doc so that each page can have a unique one. */
 body {
     height: 100%;
     margin: 0;
@@ -25,31 +37,175 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
+
+/* some basic classes and IDs. central is the div in the middle of each page,
+top frame is the top image on each page, centertext is used on main.html below the top image */
+.topframe {
+    width: 95%;
+    margin: 0 auto;
+}
+.centertext {
+    padding: 10px 10%;
+}
 #central {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0 auto 0 auto;
-    width: 70%;
+    width: 60%;
     height: 100%;
     background-color: white;
-    padding: 30px;
+    padding-top: 20px;
     font-family: 'Noto Sans', sans-serif;
 }
+
+/* collage, used at the bottom of main.html */
+.collage {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.collage div {
+    padding: 2%;
+    width: 25%;
+    height: fit-content;
+    margin: 1%;
+    border-style: solid;
+    border-color: black;
+    border-width: thin;
+}
+
+/* styling for transport.html's top section */
+.transmap {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.transmap div {
+    padding: 2%;
+    width: 45%;
+    height: fit-content;
+    margin: 1%;
+}
+.collage h3 {
+    text-align: center;
+}
+
+/* breakpoint for mobile devices. adjusts widths and displays of several elements
+so they work properly on a mobile sized viewport. */
+@media only screen and (max-width: 480px){
+    #central {
+        width: 100%;
+    }
+    .topframe {
+        width: 100%;
+        margin: 0 auto;
+    }
+    header ul {
+        display: block;
+    }
+    header ul li {
+        display: block;
+    }
+    .collage div {
+        width: 90%;
+    }
+    .twocol div {
+        width: 90%;
+    }
+
+}
+
+/* this css is taken from the internet - apparently it takes
+quite a bit of fiddling to get YouTube embeds to be responsive */
+.video-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.video-container::after {
+    padding-top: 75%;
+    display: block;
+    content: '';
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* miscellaneous stylings, mostly relevant in only one or two elements in the site */
 img {
-    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 h1 {
     text-align: center;
     margin: 20px 0px;
 }
+
 header ul li {
     display: inline;
     padding-left: 3px;
     padding-right: 3px;
 }
+
+.twocol {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+.col {
+    width: 40%;
+    height: auto;
+    margin: 3%;
+}
 header a {
     text-decoration: none;
     color: rgb(170, 170, 170);
 }
+
 header a:hover {
     color: black;
+}
+figcaption {
+    background-color: rgb(204, 204, 204);
+    margin: 0;
+    padding: 5px;
+}
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td {
+    border: 1px solid black;
+    padding: 10px;
+}
+form {
+    margin: 2% 0;
+}
+fieldset {
+    padding: 10%;
+    border: 2px solid black;
+    float: center;
+    text-align: left;
+    font-size: 20px;
+}
+form {
+    width: 90%;
+    height: fit-content;
+    display: inline-block;
+}
+textarea {
+    width: 90%;
 }
