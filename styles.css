@@ -62,18 +62,21 @@ top frame is the top image on each page, centertext is used on main.html below t
 .collage {
 	padding: 0;
 	display: flex;
-	align-items: center;
+	align-items: stretch; /* Changed from align-items: center */
 	flex-wrap: wrap;
 	justify-content: center;
 }
 .collage div {
 	padding: 2%;
 	width: 25%;
-	height: fit-content;
+	/* Remove height: fit-content to allow stretching */
 	margin: 1%;
 	border-style: solid;
 	border-color: black;
 	border-width: thin;
+	display: flex; /* Add these three lines */
+	flex-direction: column; /* to make the content */
+	justify-content: flex-start; /* stack properly */
 }
 
 /* styling for transport.html's top section */
